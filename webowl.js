@@ -8,13 +8,55 @@ describe('simple', function ()
     })
 })
 
-function Button2_onclick()
+function ButtonPlay_onclick()
 {
-    document.getElementById("pin1").style.visibility = "hidden";
+    //allStrike();
+    //allGutter();
+    randomScore();
 }
 
-function Button1_onclick()
+function ButtonNewGame_onclick()
 {
-    document.getElementById("pin1").style.visibility = "visible";
+    for (var i = 1; i <= 10; i++)
+    {
+        document.getElementById("Img" + i).style.visibility = "visible";
+    }
+}
+
+function allStrike()
+{
+    var arr = new Array();
+    
+    for (var i = 1; i <= 20; i++)
+        arr[i] = 10;
+
+    for (var i = 1; i <= 10; i++)
+    {
+        document.getElementById("Img" + i).style.visibility = "hidden";
+    }
+}
+
+function allGutter()
+{
+    var arr = new Array();
+
+    for (var i = 1; i <= 20; i++)
+        arr[i] = 0;
+
+
+}
+
+function randomScore()
+{
+    var num = Math.floor((Math.random() * 10) + 1);
+    var arr = new Array();
+
+    for (var i = 1; i < 20; i++)
+        arr[i] = 10;
+
+    for (var i = 1; i < num; i++)
+    {
+        document.getElementById("Img" + i).style.visibility = "hidden";
+    }
 }
 

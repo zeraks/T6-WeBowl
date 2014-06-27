@@ -10,51 +10,92 @@
     </script>
 </head>
 <body>
-<script src="scores.js"></script>
+<script src="webowl.js"></script>
 
-<table style="width: 100%;">
-    <tr>
-        <td>
-            <table>
+<table style="width: 100%; height:100%">
+    <tr valign="top">
+        <td style="width:20%">
+            <table border=0>
                 
                 <tr><!--1-->
-                    <td><img id="Img3" alt="" src="pin1.gif" /></td>
-                    <td><img id="Img11" alt="" src="blankPin1.gif" /></td>
-                    <td><img id="Img2" alt="" src="pin1.gif" /></td>
-                    <td><img id="Img12" alt="" src="blankPin1.gif" /></td>
-                    <td><img id="Img6" alt="" src="pin1.gif" /></td>
-                    <td><img id="Img13" alt="" src="blankPin1.gif" /></td>
+                    <td><img id="Img10" alt="" src="pin1.gif" /></td>
+                    <td></td>
+                    <td><img id="Img9" alt="" src="pin1.gif" /></td>
+                    <td></td>
                     <td><img id="Img8" alt="" src="pin1.gif" /></td>
+                    <td></td>
+                    <td><img id="Img7" alt="" src="pin1.gif" /></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td><img id="Img6" alt="" src="pin1.gif" /></td>
+                    <td></td>                    
+                    <td><img id="Img5" alt="" src="pin1.gif" /></td>
                     <td></td>
                     <td><img id="Img4" alt="" src="pin1.gif" /></td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><img id="Img3" alt="" src="pin1.gif" /></td>                
                     
+                    <td></td>
+                    <td><img id="Img2" alt="" src="pin1.gif" /></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>         
                     <td><img id="Img1" alt="" src="pin1.gif" /></td>
                     <td></td>
-                    <td><img id="Img5" alt="" src="pin1.gif" /></td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><img id="Img7" alt="" src="pin1.gif" /></td>
-                    <td></td>
-                    
-                    <td><img id="Img9" alt="" src="pin1.gif" /></td>
-                    <td></td>
-                    <td><img id="Img10" alt="" src="pin1.gif" /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    
-                    
-                    <td><img id="pin1" alt="" src="pin1.gif" /></td>
-                    
                     <td></td>
                 </tr>
             </table>
         </td>
+        <td style="100%">
+            <!--score table-->
+            <table style="width:100%; text-align:center" border=1>
+                <tr>
+                    <td colspan=2>1</td><td colspan=2>2</td><td colspan=2>3</td><td colspan=2>4&nbsp;</td><td colspan=2>
+                    5</td><td colspan=2>6</td><td colspan=2>7</td><td colspan=2>8</td><td colspan=2>
+                    9</td><td colspan=2>10</td><td colspan=2></td>
+                </tr>
+                <tr>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>
+                    0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>
+                    0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                </tr>
+                <tr>
+                    <td colspan=2>0</td><td colspan=2>0</td><td colspan=2>0</td><td colspan=2>0</td><td colspan=2>
+                    0</td><td colspan=2>0</td><td colspan=2>0</td><td colspan=2>0</td><td colspan=2>
+                    0</td><td colspan=2>0</td><td colspan=2>0</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </td>
         <td>
             &nbsp;
         </td>
@@ -65,20 +106,10 @@
     <tr>
         <td>
             &nbsp;
+        <input id="ButtonPlay" type="button" value="Play" onclick="return ButtonPlay_onclick()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input id="ButtonNewGame" type="button" value="New game" 
+                onclick="return ButtonNewGame_onclick()" />
         </td>
-        <td>
-            &nbsp;
-        </td>
-        <td>
-            &nbsp;
-        </td>
-    </tr>
-    <tr>
-        <td>
-            &nbsp;
-        <input id="Button2" type="button" value="Play" onclick="return Button2_onclick()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input 
-                id="Button1" type="button" value="New game" 
-                onclick="return Button1_onclick()" /></td>
         <td>
             &nbsp;
         </td>
